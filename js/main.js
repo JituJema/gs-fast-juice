@@ -68,6 +68,14 @@ function applyLanguage() {
     else if (selector === "#kuhusu h2" || selector === "#menu h2" || selector === ".faq-wrap h2") el.textContent = tr(key);
     else el.textContent = tr(key);
   });
+  const heroTitle = document.querySelector(".hero h1");
+  if (heroTitle) heroTitle.innerHTML = tr("heroTitle");
+  const aboutParagraph = document.querySelector("#kuhusu .about-copy > p");
+  if (aboutParagraph) aboutParagraph.textContent = LANG === "en"
+    ? "GS Fast Juice is based in Kigamboni with one simple goal: serve real, fresh fruit juice. We prepare each order fresh, with fruit flavours to suit your taste."
+    : "GS Fast Juice ipo Kigamboni kwa lengo moja: kukuletea juisi halisi na freshi. Tunatengeneza kila oda ikiwa fresh, kwa ladha za matunda unazopenda.";
+  const locationHours = document.querySelector(".location-item:nth-child(3) span:last-child");
+  if (locationHours) locationHours.textContent = LANG === "en" ? "Please contact us to confirm today’s opening hours." : "Wasiliana nasi kuthibitisha muda wa kufunguliwa leo.";
   document.querySelectorAll(".filter-btn").forEach(btn => {
     const key = btn.dataset.filter === "all" ? "all" : btn.dataset.filter;
     btn.textContent = tr(key);
