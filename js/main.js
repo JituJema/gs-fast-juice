@@ -61,7 +61,7 @@ function applyLanguage() {
     if (["#custName","#custLocation","#custNote"].includes(selector)) el.placeholder = tr(key);
     else if (selector === ".cart-btn") {
       const count = document.getElementById("cartCount");
-      el.textContent = "🧺 " + tr(key) + " ";
+      el.textContent = " " + tr(key) + " ";
       if (count) el.append(count);
     } else if (selector === ".hero .eyebrow") el.textContent = tr(key);
     else if (selector === ".hero-ctas .btn-primary" || selector === ".hero-ctas .btn-ghost" || selector === "#checkoutBtn") el.textContent = tr(key);
@@ -85,7 +85,7 @@ function applyLanguage() {
     if (faq[i]) { faq[i].querySelector("summary").textContent = tr(q); faq[i].querySelector("p").textContent = tr(a); }
   });
   const empty = document.querySelector(".cart-empty");
-  if (empty) empty.innerHTML = '<span>🧺</span>' + safe(tr("empty")) + '<br>' + safe(tr("choose"));
+  if (empty) empty.innerHTML = '<span></span>' + safe(tr("empty")) + '<br>' + safe(tr("choose"));
   renderMenu();
   renderCart();
 }
@@ -118,7 +118,7 @@ function renderMenu() {
     return '<article class="juice-card '+(p.available ? "" : "unavailable")+'">'+
       (!p.available ? '<span class="badge-soldout">'+safe(tr("soldOut"))+'</span>' : "")+
       '<div class="sticker-price"><b>'+priceLabel+'</b><small>TSh</small></div>'+
-      '<div class="juice-glass" style="background:linear-gradient(160deg,'+safe(p.color1 || "#ffbd45")+','+safe(p.color2 || "#e23a55")+');">'+image+'<span class="emoji">'+safe(p.emoji || "🥤")+'</span></div>'+
+      '<div class="juice-glass" style="background:linear-gradient(160deg,'+safe(p.color1 || "#ffbd45")+','+safe(p.color2 || "#e23a55")+');">'+image+'<span class="emoji">'+safe(p.emoji || "")+'</span></div>'+
       '<div class="juice-name">'+safe(LANG==="en" ? p.name : p.nameSw || p.name)+'</div>'+
       '<div class="juice-name-sw">'+safe(LANG==="en" ? p.nameSw || p.name : p.name)+'</div>'+
       '<p class="juice-desc">'+safe(p.desc || "")+'</p>'+
@@ -160,13 +160,13 @@ function renderCart() {
   const countEl=document.getElementById("cartCount"), itemsEl=document.getElementById("cartItems"), footEl=document.getElementById("cartFoot");
   if (countEl) countEl.textContent=cartCount(); if (!itemsEl) return;
   if (!CART.length) {
-    itemsEl.innerHTML='<div class="cart-empty"><span>🧺</span>'+safe(tr("empty"))+'<br>'+safe(tr("choose"))+'</div>';
+    itemsEl.innerHTML='<div class="cart-empty"><span></span>'+safe(tr("empty"))+'<br>'+safe(tr("choose"))+'</div>';
     if (footEl) footEl.style.display="none"; return;
   }
   if (footEl) footEl.style.display="block";
   itemsEl.innerHTML=CART.map(c=>{
     const p=PRODUCTS.find(x=>x.id===c.id); if (!p) return "";
-    return '<div class="cart-row"><div class="thumb" style="background:linear-gradient(160deg,'+safe(p.color1 || "#ffbd45")+','+safe(p.color2 || "#e23a55")+')">'+safe(p.emoji || "🥤")+'</div>'+
+    return '<div class="cart-row"><div class="thumb" style="background:linear-gradient(160deg,'+safe(p.color1 || "#ffbd45")+','+safe(p.color2 || "#e23a55")+')">'+safe(p.emoji || "")+'</div>'+
       '<div class="info"><b>'+safe(LANG==="en" ? p.name : p.nameSw || p.name)+'</b><span>'+safe(TZS(p.price))+' × '+c.qty+'</span>'+
       '<div class="qty-ctrl"><button aria-label="'+safe(tr("decrease"))+'" data-act="dec" data-id="'+safe(p.id)+'">−</button><span>'+c.qty+'</span>'+
       '<button aria-label="'+safe(tr("increase"))+'" data-act="inc" data-id="'+safe(p.id)+'">+</button>'+
