@@ -12,7 +12,7 @@
 <meta property="og:locale" content="sw_TZ">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"JuiceStore","name":"GS Fast Juice","description":"Fresh fruit juice bar in Kigamboni, Dar es Salaam, Tanzania.","telephone":"+255626035075","address":{"@type":"PostalAddress","streetAddress":"Kwa Stivin, near Dady's Pub","addressLocality":"Kigamboni","addressRegion":"Dar es Salaam","addressCountry":"TZ"},"priceRange":"TZS 2,500–5,000","servesCuisine":"Fresh Juice"}</script>
-<link rel="icon" href="assets/gs-mark.svg" type="image/svg+xml"><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+<link rel="icon" href="assets/gs-mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
       <span class="logo-mark" aria-hidden="true">GS</span>
       <span>GS Fast Juice<small>Kigamboni · Juisi za matunda</small></span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" id="primaryNav" aria-label="Main navigation">
       <a href="#menu">Menyu</a>
       <a href="#kuhusu">Kuhusu</a>
       <a href="#mahali">Mahali Tulipo</a>
@@ -33,7 +33,7 @@
     <div class="header-actions">
       <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
       <button class="cart-btn" id="cartBtn">Kikapu <span class="cart-count" id="cartCount">0</span></button>
-      <button class="menu-toggle" id="menuToggle" aria-label="Fungua menyu">☰</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Fungua menyu" aria-controls="primaryNav" aria-expanded="false">☰</button>
     </div>
   </div>
 </header>
@@ -54,7 +54,7 @@
         <div><strong>2,500 TSh</strong>Bei ya kuanzia</div>
       </div>
     </div>
-    <figure class="hero-visual"><img class="hero-photo" src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1600&q=88" alt="Glasi za juisi za matunda freshi zenye rangi za embe, tikiti maji na parachichi" fetchpriority="high" width="1600" height="1000"><figcaption>Matunda ya msimu ? Yakitengenezwa baada ya oda</figcaption></figure>
+    <figure class="hero-visual"><img class="hero-photo" src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1600&q=88" alt="Glasi za juisi za matunda freshi zenye rangi za embe, tikiti maji na parachichi" fetchpriority="high" width="1600" height="1000"><figcaption>Matunda ya msimu, yakitengenezwa baada ya oda</figcaption></figure>
   </div>
 </section>
 
