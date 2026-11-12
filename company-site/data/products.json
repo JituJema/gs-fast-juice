@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "mango",
+      "name": "Mango Fresh",
+      "nameSw": "Embe Fresh",
+      "desc": "Embe lililoiva, tamu na lenye ladha ya kitropiki.",
+      "price": 3000,
+      "priceMax": null,
+      "category": "single",
+      "emoji": "🥭",
+      "color1": "#ffbd45",
+      "color2": "#f47b20",
+      "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=700&q=82",
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "watermelon",
+      "name": "Watermelon",
+      "nameSw": "Tikiti Maji",
+      "desc": "Juisi nyepesi, baridi na yenye kuburudisha.",
+      "price": 2500,
+      "priceMax": null,
+      "category": "single",
+      "emoji": "🍉",
+      "color1": "#ff7885",
+      "color2": "#e63d58",
+      "image": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=700&q=82",
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "passion",
+      "name": "Passion",
+      "nameSw": "Pasheni",
+      "desc": "Harufu nzuri na ladha tamu yenye uchachu kidogo.",
+      "price": 3000,
+      "priceMax": null,
+      "category": "single",
+      "emoji": "💜",
+      "color1": "#b98ad8",
+      "color2": "#63318b",
+      "image": "https://images.unsplash.com/photo-1604495772376-9657f0035eb5?auto=format&fit=crop&w=700&q=82",
+      "available": true,
+      "featured": true
+    },
+    {
+      "id": "pineapple",
+      "name": "Pineapple",
+      "nameSw": "Nanasi",
+ ֻǱ˞
