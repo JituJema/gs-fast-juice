@@ -14,7 +14,7 @@
       "image": "https://www.switch-asia.eu/site/assets/files/1112/mango-juice-1.jpg",
       "available": true,
       "featured": true,
-      "descEn": "Sweet, ripe mango blended into a smooth tropical favourite."
+      "descEn": "Sweet, ripe mango juice with a smooth tropical flavour."
     },
     {
       "id": "watermelon",
@@ -30,7 +30,7 @@
       "image": "https://images.unsplash.com/photo-1587049352851-8d4e89133924?auto=format&fit=crop&w=900&q=85",
       "available": true,
       "featured": true,
-      "descEn": "Light, cooling watermelon juice for a refreshing break."
+      "descEn": "Light, naturally sweet watermelon juice, served chilled."
     },
     {
       "id": "passion",
@@ -46,7 +46,7 @@
       "image": "https://www.gettyimages.com/",
       "available": true,
       "featured": true,
-      "descEn": "Bright, tangy passion fruit with a fragrant tropical taste."
+      "descEn": "Fragrant passion fruit juice with a bright, tangy taste."
     },
     {
       "id": "pineapple",
@@ -61,7 +61,7 @@
       "color2": "#e7a51a",
       "image": "https://hurom.ca/cdn/shop/articles/image2_03d1cf3f-86c6-4873-a80b-aba5180ad132_1024x1024.webp?v=1760097599",
       "available": true,
-      "descEn": "Fresh pineapple with a naturally sweet and lively finish."
+      "descEn": "Fresh pineapple juice with a naturally sweet, refreshing finish."
     },
     {
       "id": "orange",
@@ -76,7 +76,7 @@
       "color2": "#f47721",
       "image": "https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=900&q=85",
       "available": true,
-      "descEn": "Fresh citrus flavour, bright and naturally refreshing."
+      "descEn": "Fresh orange juice with a bright citrus taste."
     },
     {
       "id": "avocado",
@@ -91,7 +91,7 @@
       "color2": "#4f8f2e",
       "image": "https://media.ambito.com/p/e6da86a17e0d20a75dcede8081af56d1/adjuntos/360/imagenes/041/057/0041057836/730x0/smart/licuado-magico-la-formula-secreta-del-aguacate-tu-salud.png",
       "available": true,
-      "descEn": "A smooth, creamy avocado drink for a richer treat."
+      "descEn": "A smooth and creamy avocado drink."
     },
     {
       "id": "guava",
@@ -106,7 +106,7 @@
       "color2": "#e56e72",
       "image": "https://static.sayidaty.net/styles/1375_scale/public/2022-04/94917.jpeg",
       "available": true,
-      "descEn": "A fragrant, mellow juice made with fresh guava."
+      "descEn": "Mellow, fragrant guava juice with a soft tropical flavour."
     },
     {
       "id": "lemon-ginger",
@@ -121,7 +121,7 @@
       "color2": "#a7b83e",
       "image": "https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?auto=format&fit=crop&w=900&q=85",
       "available": true,
-      "descEn": "Zesty lemon with a gentle ginger kick."
+      "descEn": "Zesty lemon blended with a gentle ginger kick."
     },
     {
       "id": "beetroot",
@@ -136,7 +136,7 @@
       "color2": "#9f244e",
       "image": "https://purecleanperformance.com/cdn/shop/articles/unnamed_c3d84bd8-b981-4e7a-9adf-22b8c1507719.png?v=1731623053&width=1445",
       "available": true,
-      "descEn": "A distinctive earthy-sweet beetroot juice."
+      "descEn": "Earthy-sweet beetroot juice with a vibrant colour."
     },
     {
       "id": "carrot",
@@ -167,7 +167,7 @@
       "image": "https://www.switch-asia.eu/site/assets/files/1112/mango-juice-1.jpg",
       "available": true,
       "featured": true,
-      "descEn": "A sunny mix of mango, pineapple and passion fruit."
+      "descEn": "A tropical blend of mango, pineapple and passion fruit."
     },
     {
       "id": "mango-passion",
@@ -212,7 +212,7 @@
       "color2": "#a04d9c",
       "image": "https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=900&q=85",
       "available": true,
-      "descEn": "Citrusy orange paired with fragrant passion fruit."
+      "descEn": "Bright orange blended with fragrant passion fruit."
     },
     {
       "id": "mango-avocado",
@@ -227,7 +227,7 @@
       "color2": "#5b923d",
       "image": "https://media.ambito.com/p/e6da86a17e0d20a75dcede8081af56d1/adjuntos/360/imagenes/041/057/0041057836/730x0/smart/licuado-magico-la-formula-secreta-del-aguacate-tu-salud.png",
       "available": true,
-      "descEn": "A rich, creamy blend of mango and avocado."
+      "descEn": "A rich, creamy blend of sweet mango and avocado."
     },
     {
       "id": "banana-avocado",
@@ -257,7 +257,7 @@
       "color2": "#4f8f2e",
       "image": "https://frugivore-bucket.s3.amazonaws.com/media/recipe/2026-07-19/cucumber-mint-juice.jpg",
       "available": true,
-      "descEn": "A fresh green blend with avocado and citrus notes."
+      "descEn": "A refreshing green blend with avocado and citrus notes."
     },
     {
       "id": "strawberry-banana",
@@ -272,7 +272,7 @@
       "color2": "#e34f6b",
       "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=900&q=85",
       "available": true,
-      "descEn": "A sweet, creamy strawberry and banana blend."
+      "descEn": "A sweet, creamy blend of strawberry and banana."
     },
     {
       "id": "detox-mix",
@@ -287,7 +287,7 @@
       "color2": "#57974b",
       "image": "https://frugivore-bucket.s3.amazonaws.com/media/recipe/2026-07-19/cucumber-mint-juice.jpg",
       "available": true,
-      "descEn": "A crisp citrus and ginger fruit blend."
+      "descEn": "A crisp blend of citrus, ginger and fresh fruit."
     },
     {
       "id": "special-mix",
@@ -303,14 +303,14 @@
       "image": "https://www.switch-asia.eu/site/assets/files/1112/mango-juice-1.jpg",
       "available": true,
       "featured": true,
-      "descEn": "Our changing mix of seasonal fruits. Ask what is fresh today."
+      "descEn": "Our seasonal fruit blend. Ask us what is freshly available today."
     },
     {
       "id": "papaya",
       "name": "Papaya Fresh",
       "nameSw": "Papai Fresh",
       "desc": "Papai iliyoiva na yenye utamu wa asili.",
-      "descEn": "Smooth, naturally sweet papaya juice.",
+      "descEn": "Smooth papaya juice with a naturally sweet flavour.",
       "price": 2500,
       "priceMax": null,
       "category": "single",
@@ -355,7 +355,7 @@
       "name": "Sugarcane Juice",
       "nameSw": "Miwa Fresh",
       "desc": "Juisi ya miwa iliyokamuliwa fresh.",
-      "descEn": "Freshly pressed sugarcane juice, naturally sweet.",
+      "descEn": "Freshly pressed sugarcane juice with natural sweetness.",
       "price": 2500,
       "priceMax": null,
       "category": "single",
@@ -415,7 +415,7 @@
       "name": "Pineapple Watermelon",
       "nameSw": "Nanasi na Tikiti Maji",
       "desc": "Nanasi tamu na tikiti maji baridi.",
-      "descEn": "Golden pineapple meets cool, juicy watermelon.",
+      "descEn": "Golden pineapple blended with cool, juicy watermelon.",
       "price": 3500,
       "priceMax": null,
       "category": "blend",
