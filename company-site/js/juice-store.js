@@ -74,6 +74,23 @@ function applyLanguage() {
   if (aboutParagraph) aboutParagraph.textContent = LANG === "en"
     ? "GS Fast Juice is based in Kigamboni with one simple goal: serve real, fresh fruit juice. We prepare each order fresh, with fruit flavours to suit your taste."
     : "GS Fast Juice ipo Kigamboni kwa lengo moja: kukuletea juisi halisi na freshi. Tunatengeneza kila oda ikiwa fresh, kwa ladha za matunda unazopenda.";
+  const locationLabels = document.querySelectorAll(".location-item strong");
+  const locationLabelEn = ["Address","Phone / WhatsApp","Opening hours"];
+  const locationLabelSw = ["Anwani","Simu / WhatsApp","Muda wa kufunguliwa"];
+  locationLabels.forEach((el,i)=>{el.textContent=LANG==="en" ? locationLabelEn[i] : locationLabelSw[i];});
+  const locationAddress = document.querySelector(".location-item:nth-child(1) span:last-child");
+  if(locationAddress) locationAddress.textContent=LANG==="en" ? "Kwa Stivin, near Dady's Pub — Kigamboni, Dar es Salaam" : "Kwa Stivin, Karibu na Dady's Pub — Kigamboni, Dar es Salaam";
+  const stepTitlesEn=["Choose your juice","Order on WhatsApp","Enjoy it fresh"];
+  const stepTitlesSw=["Chagua juisi","Tuma oda WhatsApp","Pokea fresh"];
+  const stepTextsEn=["Choose from more than 20 flavours, single fruits or blends.","Add your choices to the cart and send your order through WhatsApp.","We prepare your juice fresh for collection or delivery around Kigamboni."];
+  const stepTextsSw=["Chagua kutoka aina zaidi ya 20, moja au mchanganyiko.","Bonyeza Ongeza kwenye kikapu kisha tuma oda kwa WhatsApp.","Tunakamua na kukuletea — Kigamboni na maeneo jirani."];
+  document.querySelectorAll("#kuhusu .step").forEach((step,i)=>{const h=step.querySelector("h4"),p=step.querySelector("p");if(h)h.textContent=(LANG==="en"?stepTitlesEn:stepTitlesSw)[i];if(p)p.textContent=(LANG==="en"?stepTextsEn:stepTextsSw)[i];});
+  const locationTag=document.querySelector("#mahali .section-tag"); if(locationTag) locationTag.textContent=LANG==="en" ? "Find us" : "Mahali Tulipo";
+  const footerIntro=document.querySelector(".footer-grid > div:first-child p"); if(footerIntro) footerIntro.textContent=LANG==="en" ? "Fresh fruit juices, made in Kigamboni and served wherever you are. Freshly prepared with care, every day." : "Juisi freshi za matunda halisi, kutoka Kigamboni kwenda mahali ulipo. Kamuliwa kwa upendo, kila siku.";
+  const footerCols=document.querySelectorAll(".footer-col");
+  if(footerCols[0]) {const h=footerCols[0].querySelector("h5"),a=footerCols[0].querySelectorAll("a");if(h)h.textContent=LANG==="en"?"Explore":"Tembelea";["Menu","About us","Find us"].forEach((v,i)=>{if(a[i])a[i].textContent=LANG==="en"?v:["Menyu","Kuhusu Sisi","Mahali Tulipo"][i];});}
+  if(footerCols[1]) {const h=footerCols[1].querySelector("h5"),p=footerCols[1].querySelector("p"),a=footerCols[1].querySelectorAll("a");if(h)h.textContent=LANG==="en"?"Contact":"Mawasiliano";if(p)p.textContent=LANG==="en"?"Kwa Stivin, near Dady's Pub, Kigamboni":"Kwa Stivin, karibu na Dady's Pub, Kigamboni";if(a[1])a[1].textContent=LANG==="en"?"Chat on WhatsApp":"WhatsApp Sasa";}
+  const footerBottom=document.querySelector(".footer-bottom");if(footerBottom){const spans=footerBottom.querySelectorAll("span");if(spans[0])spans[0].textContent=LANG==="en"?"© 2026 GS Fast Juice. All rights reserved.":"© 2026 GS Fast Juice. Haki zote zimehifadhiwa.";if(spans[1])spans[1].textContent="Made by Availabz Softworks";}
   const locationHours = document.querySelector(".location-item:nth-child(3) span:last-child");
   if (locationHours) locationHours.textContent = LANG === "en" ? "Please contact us to confirm today’s opening hours." : "Wasiliana nasi kuthibitisha muda wa kufunguliwa leo.";
   document.querySelectorAll(".filter-btn").forEach(btn => {
@@ -120,8 +137,8 @@ function renderMenu() {
       '<div class="sticker-price"><b>'+priceLabel+'</b><small>TSh</small></div>'+
       '<div class="juice-glass" style="background:linear-gradient(160deg,'+safe(p.color1 || "#ffbd45")+','+safe(p.color2 || "#e23a55")+');">'+image+'<span class="emoji">'+safe(p.emoji || "")+'</span></div>'+
       '<div class="juice-name">'+safe(LANG==="en" ? p.name : p.nameSw || p.name)+'</div>'+
-      '<div class="juice-name-sw">'+safe(LANG==="en" ? p.nameSw || p.name : p.name)+'</div>'+
-      '<p class="juice-desc">'+safe(LANG === "en" ? p.descEn || p.desc || "" : p.desc || "")+'</p>'+
+      (LANG === "en" ? "" : '<div class="juice-name-sw">'+safe(p.name)+'</div>')+
+      '<p class="juice-desc">'+safe(LANG === "en" ? p.descEn || "Freshly prepared fruit juice." : p.desc || "")+'</p>'+
       '<div class="card-footer"><div class="price-tag">'+safe(TZS(p.price))+'<br><small>'+safe(tr("perGlass"))+'</small></div>'+
       '<button class="add-btn" '+(p.available ? "" : "disabled")+' data-id="'+safe(p.id)+'">'+safe(tr("add"))+'</button></div></article>';
   }).join("");
