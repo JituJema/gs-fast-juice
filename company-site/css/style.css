@@ -1,0 +1,47 @@
+/* ==========================================================================
+   GS FAST JUICE — design tokens
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+  --cream:      #FFF6E9;
+  --cream-2:    #FCEFDA;
+  --ink:        #1E2A1E;
+  --ink-soft:   #4A5A45;
+  --line:       rgba(30,42,30,0.12);
+
+  --mango:      #FF9F1C;
+  --mango-2:    #FF7A00;
+  --passion:    #6B2D8C;
+  --passion-2:  #9B5DBF;
+  --watermelon: #E23A55;
+  --watermelon-2: #FF6B81;
+  --lime:       #4F8F2E;
+
+  --radius-lg:  28px;
+  --radius-md:  18px;
+  --radius-sm:  12px;
+
+  --shadow-card: 0 10px 30px rgba(30,42,30,0.10);
+  --shadow-pop:  0 18px 44px rgba(30,42,30,0.18);
+
+  --font-display: 'Bricolage Grotesque', 'Arial Black', sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{
+  margin:0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+button{ font-family:inherit; cursor:pointer; }
+h1,h2,h3{ font-family: var(--font-display); margin:0; line-height:1.02; letter-spacing:-0.01em; }
+p{ margin:0; }
+.container{ max-width:1180px; margiֻǱ˞
