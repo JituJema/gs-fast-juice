@@ -93,7 +93,7 @@ function applyLanguage() {
 async function loadProducts() {
   const grid = document.getElementById("menuGrid");
   try {
-    const res = await fetch("data/products.json", {cache:"no-store"});
+    const res = await fetch("data/juice-products.json", {cache:"no-store"});
     if (!res.ok) throw new Error("Products request failed");
     const data = await res.json();
     PRODUCTS = Array.isArray(data.products) ? data.products.filter(p => p && p.id && p.name && Number.isFinite(Number(p.price))) : [];
