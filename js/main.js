@@ -216,11 +216,20 @@ document.addEventListener("DOMContentLoaded",()=>{
   document.getElementById("langToggle")?.addEventListener("click",()=>{
     LANG=LANG==="sw" ? "en" : "sw"; localStorage.setItem("gsfj-language",LANG); applyLanguage();
   });
-  document.getElementById("menuToggle")?.addEventListener("click",()=>{
-    const nav=document.querySelector(".nav-links"); if (!nav) return;
-    const open=nav.classList.toggle("mobile-open");
-    document.getElementById("menuToggle")?.setAttribute("aria-expanded",String(open));
+  const menuToggle = document.getElementById("menuToggle");
+  const primaryNav = document.getElementById("primaryNav");
+  const closeMobileMenu = () => {
+    primaryNav?.classList.remove("mobile-open");
+    menuToggle?.setAttribute("aria-expanded","false");
+  };
+  menuToggle?.addEventListener("click",()=>{
+    const open=primaryNav?.classList.toggle("mobile-open") || false;
+    menuToggle.setAttribute("aria-expanded",String(open));
   });
-  document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.querySelector(".nav-links")?.classList.remove("mobile-open")));
+  primaryNav?.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeMobileMenu));
+  document.addEventListener("keydown",event=>{ if(event.key==="Escape") closeMobileMenu(); });
+  document.addEventListener("click",event=>{
+    if(primaryNav && menuToggle && !primaryNav.contains(event.target) && !menuToggle.contains(event.target)) closeMobileMenu();
+  });
   applyLanguage(); loadProducts(); renderCart();
 });
