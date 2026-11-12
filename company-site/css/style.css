@@ -45,3 +45,7 @@ button{ font-family:inherit; cursor:pointer; }
 h1,h2,h3{ font-family: var(--font-display); margin:0; line-height:1.02; letter-spacing:-0.01em; }
 p{ margin:0; }
 .container{ max-width:1180px; margiֻǱ˞
+
+/* Mobile and touch-device scrolling safeguard */
+html, body { min-height: 100%; height: auto; overflow-x: hidden; overflow-y: auto !important; }
+body { position: static; -webkit-overflow-scrolling: touch; overscroll-behavior-y: auto; }
